@@ -6,4 +6,27 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ReportGeneratorService.Core\ReportGeneratorService.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="15.0.1" />
+      <PackageReference Include="FluentValidation" Version="12.0.0" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+      <PackageReference Include="MediatR" Version="13.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.9" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.9" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Behaviors\" />
+      <Folder Include="DTOs\Queries\" />
+      <Folder Include="DTOs\Requests\" />
+      <Folder Include="Interfases\" />
+      <Folder Include="Mappings\" />
+      <Folder Include="UseCases\Reports\" />
+      <Folder Include="UseCases\Students\" />
+    </ItemGroup>
+
 </Project>
