@@ -25,7 +25,6 @@
       <Folder Include="DTOs\Requests\" />
       <Folder Include="Interfases\" />
       <Folder Include="Mappings\" />
-      <Folder Include="UseCases\Reports\" />
       <Folder Include="UseCases\Students\" />
     </ItemGroup>
 
