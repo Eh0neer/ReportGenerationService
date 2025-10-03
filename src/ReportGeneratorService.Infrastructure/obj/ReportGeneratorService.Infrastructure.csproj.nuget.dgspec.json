@@ -4,14 +4,103 @@
     "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Infrastructure/ReportGeneratorService.Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Infrastructure/ReportGeneratorService.Infrastructure.csproj": {
+    "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Application/ReportGeneratorService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Infrastructure/ReportGeneratorService.Infrastructure.csproj",
-        "projectName": "ReportGeneratorService.Infrastructure",
-        "projectPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Infrastructure/ReportGeneratorService.Infrastructure.csproj",
+        "projectUniqueName": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Application/ReportGeneratorService.Application.csproj",
+        "projectName": "ReportGeneratorService.Application",
+        "projectPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Application/ReportGeneratorService.Application.csproj",
         "packagesPath": "/home/eh0neer/.nuget/packages/",
-        "outputPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Infrastructure/obj/",
+        "outputPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/eh0neer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Core/ReportGeneratorService.Core.csproj": {
+                "projectPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Core/ReportGeneratorService.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Core/ReportGeneratorService.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Core/ReportGeneratorService.Core.csproj",
+        "projectName": "ReportGeneratorService.Core",
+        "projectPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Core/ReportGeneratorService.Core.csproj",
+        "packagesPath": "/home/eh0neer/.nuget/packages/",
+        "outputPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/eh0neer/.nuget/NuGet/NuGet.Config"
@@ -43,6 +132,84 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Infrastructure/ReportGeneratorService.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Infrastructure/ReportGeneratorService.Infrastructure.csproj",
+        "projectName": "ReportGeneratorService.Infrastructure",
+        "projectPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Infrastructure/ReportGeneratorService.Infrastructure.csproj",
+        "packagesPath": "/home/eh0neer/.nuget/packages/",
+        "outputPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/eh0neer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Application/ReportGeneratorService.Application.csproj": {
+                "projectPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Application/ReportGeneratorService.Application.csproj"
+              },
+              "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Core/ReportGeneratorService.Core.csproj": {
+                "projectPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Core/ReportGeneratorService.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

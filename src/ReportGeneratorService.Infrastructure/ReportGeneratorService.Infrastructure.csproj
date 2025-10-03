@@ -6,4 +6,24 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Authentication\" />
+      <Folder Include="Data\EntityConfigurations\" />
+      <Folder Include="Data\Migrations\" />
+      <Folder Include="Data\Repositories\" />
+      <Folder Include="External\" />
+      <Folder Include="FileStorage\" />
+      <Folder Include="Options\" />
+      <Folder Include="Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ReportGeneratorService.Application\ReportGeneratorService.Application.csproj" />
+      <ProjectReference Include="..\ReportGeneratorService.Core\ReportGeneratorService.Core.csproj" />
+    </ItemGroup>
+
 </Project>

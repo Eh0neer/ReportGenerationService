@@ -1,16 +1,18 @@
 using ReportGeneratorService.Core.Interfaces.Services;
+using ReportGeneratorService.Core.ValueObjects;
 
 namespace ReportGeneratorService.Core.Entities;
 
 public class User : Entity<Guid>
 {
-    public string Email { get; private set; }
-    public string PasswordHash { get; private set; }
-    public string MfaSecret { get; private set; }
-    public DateTime CreatedAt { get; private set; }
-    public DateTime? UpdatedAt { get; private set; }
+    public string Email { get; private set; } = null!;
+    public string PasswordHash { get; private set; } = null!;
+    public string MfaSecret { get; private set; } = null!;
 
-    private User() { }
+    private readonly List<ContactInfo> _contactInfos = new();
+    public IReadOnlyCollection<ContactInfo> ContactInfos => _contactInfos.AsReadOnly();
+
+    private User() { } // For EF Core
 
     private User(string email, string passwordHash, string mfaSecret)
     {
@@ -18,7 +20,6 @@ public class User : Entity<Guid>
         Email = email;
         PasswordHash = passwordHash;
         MfaSecret = mfaSecret;
-        CreatedAt = DateTime.UtcNow;
     }
 
     public static User Create(string email, string password, IMfaService mfaService,
@@ -49,7 +50,7 @@ public class User : Entity<Guid>
     public void UpdatePassword(string newPassword, IPasswordHasher passwordHasher)
     {
         PasswordHash = passwordHasher.Hash(newPassword);
-        UpdatedAt = DateTime.UtcNow;
+        // Вместо прямого доступа к UpdatedAt, используем метод базового класса
+        UpdateTimestamps();
     }
-    
 }

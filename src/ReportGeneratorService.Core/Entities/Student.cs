@@ -50,7 +50,7 @@ public class Student : Entity<string>
         StudentStatus status,
         string orderNumber,
         DateTime orderDate,
-        int contingentId)
+        int contingentId) : base(studentId)
     {
         Id = studentId ?? throw new ArgumentNullException(nameof(studentId));
         LastName = lastName ?? throw new ArgumentNullException(nameof(lastName));

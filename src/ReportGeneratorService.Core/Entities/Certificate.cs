@@ -12,7 +12,7 @@ public class Certificate : Entity<int>
 
     private Certificate() { }
 
-    private Certificate(string code, CertificateType type, string studentId)
+    private Certificate(string code, CertificateType type, string studentId) : base()
     {
         Code = code ?? throw new ArgumentNullException(nameof(code));
         Type = type;

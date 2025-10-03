@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGeneratorService.Infr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGeneratorService.Web", "src\ReportGeneratorService.Web\ReportGeneratorService.Web.csproj", "{0FB9C750-985E-4FD9-9957-2B9E5C7022AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eportGeneratorService.Shared", "src\eportGeneratorService.Shared\eportGeneratorService.Shared.csproj", "{02890322-B94D-4EDA-A750-33424B44A752}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGeneratorService.Shared", "src\ReportGeneratorService.Shared\ReportGeneratorService.Shared.csproj", "{02890322-B94D-4EDA-A750-33424B44A752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

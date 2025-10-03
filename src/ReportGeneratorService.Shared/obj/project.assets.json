@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/eh0neer/develop/ReportGenerationService/src/eportGeneratorService.Shared/eportGeneratorService.Shared.csproj",
-      "projectName": "eportGeneratorService.Shared",
-      "projectPath": "/home/eh0neer/develop/ReportGenerationService/src/eportGeneratorService.Shared/eportGeneratorService.Shared.csproj",
+      "projectUniqueName": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Shared/ReportGeneratorService.Shared.csproj",
+      "projectName": "ReportGeneratorService.Shared",
+      "projectPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Shared/ReportGeneratorService.Shared.csproj",
       "packagesPath": "/home/eh0neer/.nuget/packages/",
-      "outputPath": "/home/eh0neer/develop/ReportGenerationService/src/eportGeneratorService.Shared/obj/",
+      "outputPath": "/home/eh0neer/develop/ReportGenerationService/src/ReportGeneratorService.Shared/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/eh0neer/.nuget/NuGet/NuGet.Config"
