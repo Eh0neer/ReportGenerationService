@@ -20,11 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Behaviors\" />
       <Folder Include="DTOs\Queries\" />
-      <Folder Include="DTOs\Requests\" />
-      <Folder Include="Interfases\" />
-      <Folder Include="Mappings\" />
     </ItemGroup>
 
 </Project>
